@@ -5,11 +5,11 @@ a poc for contractors to come together and doing away with recruiters
 
 ### Problem
 
-Currently freelancer professionals often have to manage finances, marketing and all the associated aspects of running a business themselves. This is arguably fine if the market is a saturated one: freelancers compete with each other, free market economics, etc. etc. The situation is not so great however, if the market is the seller's market:
+Currently freelancer professionals often have to manage finances, marketing and all the associated aspects of running a business themselves. This is arguably fine if the market is a saturated one: freelancers compete with each other, free market economics, etc. etc. Otherwise the situation is not ideal :
 
 - Many professionals don't choose freelancing because they have an arbitrary understanding of the market, their skills and their values in the market.
 
-- Many freelancers undervalue their service as they lack the sales and marketing skill.
+- Many freelancers undervalue their service as they lack the sales and marketing skills.
 
 - Some freelancers overcharge for their service simply because they are better at marketing themselves or have better connections. This is bad for contractees but also bad for other freelancers who might be at an "unfair" disadvantage.
 
@@ -58,9 +58,17 @@ The following is the public interface for the cooperation:
 
 The idea is that contractor's ratings can determine their chances of getting work and potentially, how much they are paid. when it gets to the implementation, the two main logical components are:
 
-- ```scala def hireContractor(dailyRate: DailyRate): Option[Contractor]``` ie, who is allocated a role.
+- who is allocated a role:
+  
+  ```scala 
+  def hireContractor(dailyRate: DailyRate): Option[Contractor]
+  ```
 
-- ```scala def payForService(contractor: Contractor, dailyRate: DailyRate): Unit``` ie, how the money is distributed to contractors.
+- how the money is distributed to contractors
+  
+  ```scala
+  def payForService(contractor: Contractor, dailyRate: DailyRate): Unit
+  ```
 
 ## Agenda
  
