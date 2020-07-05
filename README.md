@@ -60,15 +60,19 @@ The idea is that contractor's ratings can determine their chances of getting wor
 
 - who is allocated a role:
   
-  ```scala 
-  def hireContractor(dailyRate: DailyRate): Option[Contractor]
-  ```
+```scala 
+    def hireContractor(dailyRate: DailyRate): Option[Contractor]
+```
 
 - how the money is distributed to contractors
   
-  ```scala
-  def payForService(contractor: Contractor, dailyRate: DailyRate): Unit
-  ```
+```scala
+    def payForService(contractor: Contractor, dailyRate: DailyRate): Unit
+```
+
+## Demo
+
+A Very basic demo is done in the [Demo app](smart-guilds/src/Demo.scala).
 
 ## Agenda
  
