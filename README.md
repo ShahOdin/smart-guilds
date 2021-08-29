@@ -1,5 +1,5 @@
 # Smart Guilds
-a poc for contractors to do away with recruiters, using BlockChain's "smart contract"s!
+a poc for contractors to do away with recruiters, using BlockChain's "smart contracts"!
 
 ## Background
 
